@@ -16,8 +16,7 @@ public class FullPermutation {
 			result.add(buff);
 		}
 		for (int i = 0; i < base.length(); i++) {
-			List<String> temp = list(new StringBuffer(base).deleteCharAt(i)
-					.toString(), buff + base.charAt(i));
+			List<String> temp = list(new StringBuffer(base).deleteCharAt(i).toString(), buff + base.charAt(i));
 			result.addAll(temp);
 		}
 		return result;
